@@ -225,8 +225,8 @@ $$
 To optimize performance and computational efficiency, linear transformers often constrain matrices to be diagonal. This parameterization simplifies the update process significantly. Key matrices $P_k^l$ and $Q_k^l$ are represented as:
 
 $$
-P_k^l = \begin{pmatrix} p_{x,k}^l & 0 \\ 0 & p_{y,k}^l \end{pmatrix}, \quad
-Q_k^l = \begin{pmatrix} q_{x,k}^l & 0 \\ 0 & q_{y,k}^l \end{pmatrix}.
+P_k^l = \begin{pmatrix} p_{x,k}^l & 0 \newline 0 & p_{y,k}^l \end{pmatrix}, \quad
+Q_k^l = \begin{pmatrix} q_{x,k}^l & 0 \newline 0 & q_{y,k}^l \end{pmatrix}.
 $$
 
 By reparameterizing the transformer, the update equations for diagonal attention matrices become:
