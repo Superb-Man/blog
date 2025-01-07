@@ -90,7 +90,14 @@ $$
 \Delta e_i = W_P \sum_{j=1}^n \langle W_Q e_i, W_K e_j \rangle W_V e_j
 $$
 
-This can be re-expressed using pre-computed matrices $P = W_P W_V$ and $Q = W_K^T W_Q$:
+This can be re-expressed using pre-computed matrices $P = W_P W_V$ and $Q = W_K^T W_Q$,  
+such that $P$ and $Q$ are precomputed. Now, we don't need to compute the dot product of the matrices for each $e_i$.  
+
+For all $e_i$, the precomputed matrices remain the same.  
+This is achieved by the assumption of higher-dimensional non-linear kernel to linear equivalency.  
+
+Think of it like this:  
+Suppose I have a parabolic function $f(x) = x^2 - 4$, all the negative values of the function determine "NO," and all the non-negative values determine "YES". The linear $x$-axis will effectively classify the function. It's as simple as that.
 
 $$
 \Delta e_i = \sum_{j=1}^n (e_j^T Q e_i) P e_j
