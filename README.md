@@ -339,4 +339,3 @@ Below are sample performance plots illustrating the adjusted evaluation loss acr
 ---
 ## Conclusion
 Linear transformers challenge the assumption that model simplicity leads to reduced performance. This paper demonstrates that even reduced-complexity models can exhibit powerful emergent behaviors. By acting as implicit optimizers and discovering new algorithms, linear transformers reinforce their position as viable, efficient alternatives to full transformers.
-explain the diagonal parameterization more
