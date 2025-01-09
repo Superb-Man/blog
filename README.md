@@ -1,6 +1,6 @@
 # Unveiling the Power of Linear Transformers 
 
-*By **Lara** and **Toriqe***  
+*By **Lara-1905062** and **Toriqe-1905104***  
 
 
 ---
