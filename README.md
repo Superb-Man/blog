@@ -168,7 +168,7 @@ During training, linear transformer runs linear regression on each of its layer.
 The model refines weights with an adaptive momentum term:
 
 $$
-w^{l+1} = w^l - \eta \nabla f(wl) + \beta (w^l - w^{l-1})
+w^{l+1} = w^l - \eta \nabla f(w^l) + \beta (w^l - w^{l-1})
 $$
 
 Where:
